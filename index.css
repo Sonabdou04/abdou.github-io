@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #10324c;
+    padding-top: 75px;
+    
+}
+.seconn {
+    text-decoration: none;
+    color: black;
+}
+.logo {
+    animation: fadeIn 1.5s ease-in-out; 
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 65px;
+    background-color: #164979;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+}
+.logopicture {
+    margin-left: 25px;
+    width: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.st {
+    color: rgb(38, 187, 255);
+    font-size: 18px;
+}
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 35px;
+}
+ul li a {
+    text-decoration: none;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: color 0.6s ease;
+}
+ul li a:hover {
+    color: rgb(38, 187, 255);
+}
+.signin {
+    padding: 8px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: rgb(38, 187, 255);
+    color: black;
+    margin-right: 25px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+.signin:hover {
+    background-color: #aae4ff;
+}
+p {
+    font-family: Inter, sans-serif;
+}
+.dd {
+    width: 70%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slide {
+    background-image: url(img/elden.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 85vh;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 10s;
+    
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 25s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes animate {
+    100% {
+        background-image: url(img/Mortal-Kombat-1-Key-Art.png);
+    }
+    80% {
+        background-image: url(img/ddkyv0p-97492efb-d912-41a3-9008-384e19abc1b7.png);
+    }
+    60% {
+        background-image: url(img/EGS_MarvelsSpiderManMilesMorales_InsomniacGamesNixxesSoftware_S1_2560x1440-a0518b9f9f36a05294e37448df8a27a0.jpg);
+    }
+    40% {
+        background-image: url(img/liesofp.avif);
+    }
+    20% {
+        background-image: url(img/re2.jpg);
+    }
+    0% {
+        background-image: url(img/al2.jpg);
+    }
+}
+.flex_alan {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 17%;
+    position: absolute;
+    top: 48%;
+}
+.flexbutton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 155px;
+}
+.text1 , .text2 , .text3 {
+    color: white;
+}
+.text2 {
+    font-size: 20px;
+}
+.text3 {
+    font-size: 18px;
+}
+.old_price {
+    color: gray;
+    text-decoration: line-through;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.new_price {
+    font-size: 20px;
+}
+button.save {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 12px;
+    padding: 15px 30px;
+    margin-right: 10px;
+    border-radius: 8px;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+button.save:hover {
+    background-color: rgba(255, 255, 255, 0.772);
+}
+button.add {
+    border: none;
+    font-size: 14px;
+    padding: 15px 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.192);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+button.add:hover {
+    background-color: rgba(255, 255, 255, 0.749)
+}
+.title {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: Inter, sans-serif;
+    margin-left: 185px;
+    margin-bottom: 50px;
+    margin-top: 70px;
+    cursor: pointer;
+}
+.gridcont {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    row-gap: 15px;
+    column-gap:105px;
+    justify-content: center;
+    justify-items: center;
+}
+.flexcont {
+    display: flex;
+    flex-direction: column;
+}
+.img_game {
+    width: 350px;
+    height: 196.88px;
+    object-fit: contain;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: filter 0.3s ease-in-out;
+}
+.img_game:hover {
+    filter: blur(2px);
+}
+.gamename {
+    color: white;
+    font-size: 20px;
+    margin-left: 18px;
+    font-weight: 400;
+}
+.desc {
+    color: rgba(245, 245, 245, 0.6);
+    font-size: 16px;
+    margin-left: 18px;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    width: 315px;
+}
+.price {
+    color: white;
+    font-size: 22px;
+    margin-left: 18px;
+    display: inline-block;
+    margin-right: 28px;
+}
+a button.view_more {
+    margin-top: 25px;
+    border: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+a button.view_more:hover {
+    background-color: rgba(255, 255, 255, 0.32);
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+}
