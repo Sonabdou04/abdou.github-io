@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #10324c;
+}
+.title {
+    color: white;
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: Inter, sans-serif;
+    margin-left: 185px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-top: 70px;
+    cursor: pointer;
+}
+.gridcont {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    row-gap: 15px;
+    column-gap:105px;
+    justify-content: center;
+    justify-items: center;
+}
+.flexcont {
+    display: flex;
+    flex-direction: column;
+}
+.img_game {
+    width: 350px;
+    height: 196.88px;
+    object-fit: contain;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: filter 0.3s ease-in-out;
+}
+.img_game:hover {
+    filter: blur(2px);
+}
+.gamename {
+    color: white;
+    font-size: 20px;
+    margin-left: 18px;
+    font-weight: 400;
+}
+.desc {
+    color: rgba(245, 245, 245, 0.6);
+    font-size: 14px;
+    margin-left: 18px;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    width: 315px;
+}
+.price {
+    color: white;
+    font-size: 22px;
+    margin-left: 18px;
+    display: inline-block;
+    margin-right: 28px;
+}
